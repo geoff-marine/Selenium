@@ -681,13 +681,185 @@
       ],
       "value": "9999"
     }, {
-      "id": "e138ded2-ef6c-4855-a590-d96a6248a3f7",
+      "id": "29c16f3f-4004-4790-9051-f604b9e5ccd1",
       "comment": "",
       "command": "click",
       "target": "xpath=//section/div/div[3]/div/div/div[2]/div/div/div/div",
       "targets": [
         ["css=.focus", "css:finder"],
         ["xpath=//section/div/div[3]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01ec61ae-3c0a-4eb4-ae53-c7b11eadd762",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Cod"
+    }, {
+      "id": "1e982745-7c2e-40c6-bfc8-324ce983ba6e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Cod${KEY_ENTER}"
+    }, {
+      "id": "e4a98928-4d75-4800-98ac-271859da5c1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go",
+      "targets": [
+        ["linkText=Go", "linkText"],
+        ["css=#spSite > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go')]", "xpath:link"],
+        ["xpath=//div[@id='spSite']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shiny.marine.ie/igfscod/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "Cod",
+      "windowTimeout": 5000
+    }, {
+      "id": "29fa3b4b-93cb-468b-8a9f-42b1f9c1a57d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${Cod}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "780444d3-3efd-4bee-9dee-ff8590e550c0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=mymap",
+      "targets": [
+        ["id=mymap", "id"],
+        ["css=#mymap", "css:finder"],
+        ["xpath=//div[@id='mymap']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-6439-1']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "32fb7204-1de8-417d-87b2-63d467ea30b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=leaflet-base-layers",
+      "targets": [
+        ["name=leaflet-base-layers", "name"],
+        ["css=.leaflet-control-layers-base > label:nth-child(1) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=//input[@name='leaflet-base-layers']", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d01e7ad8-be95-4be1-80e9-4d30c674b4ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(2) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[2]/div/input", "xpath:idRelative"],
+        ["xpath=//label[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ec43981-d552-4fa6-a880-3d828244ddf7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.leaflet-interactive:nth-child(97)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(97)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f9e0ce-16ac-4b49-942e-802757f2005b",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(3) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(3) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[3]/div/input", "xpath:idRelative"],
+        ["xpath=//label[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ba9843c-a13d-486b-8942-a32782d33cba",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.leaflet-interactive:nth-child(75)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(75)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c69ac2b3-cd85-47f3-829e-03b60b42e202",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(4) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(4) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[4]/div/input", "xpath:idRelative"],
+        ["xpath=//label[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c719592-b1ab-4ee3-b3ce-b856238e9438",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(5) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(5) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[5]/div/input", "xpath:idRelative"],
+        ["xpath=//label[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e160c6e-9172-4b0a-b3f4-03948438095d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.leaflet-interactive:nth-child(72)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(72)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b935447-b19d-4d03-997f-8d06c52f68f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-control-layers-overlays .leaflet-control-layers-selector",
+      "targets": [
+        ["css=.leaflet-control-layers-overlays .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div[3]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5e1c845-1ba9-49e0-90b5-49daad58e215",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.leaflet-marker-icon:nth-child(22)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(22)", "css:finder"],
+        ["xpath=(//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8UlEQVQ4jYXTPWrDQBCG4UdChBxkjpOfwjHYRYrgYwVXKWxwksLJcXQS4yKFx7CyVsqAYNmd95vV7DcN9H3f4R0/EfFtJvq+f8EjNhFxbhL+wApnrCPicwbeocMer21WXmVOh10mzsGS2bb4wqnIHYlUYMkcmkx4SKG7IuGMda5r8CIifpuiypSIKRia4mBKpIwBPBL4R2QEQ1upcj+x3+bZIG5/odbtMkY+KZtYg2tNHIi0M/AJy/wmfdLMwRFxzAJPOKj4pHUZjNo7H68buV5UbvLcYuMyGCU8eKoU+b0R2ePtauUOWxxqcBnpk6Uc5z/x5XtXVVAi8wAAAABJRU5ErkJggg==')])[22]", "xpath:img"],
+        ["xpath=//div[@id='mymap']/div/div[4]/img[22]", "xpath:idRelative"],
+        ["xpath=//img[22]", "xpath:position"]
       ],
       "value": ""
     }]

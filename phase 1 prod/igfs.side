@@ -1,0 +1,705 @@
+{
+  "id": "aff2066d-1eec-40ba-9158-65f2ff39c039",
+  "version": "2.0",
+  "name": "igfs",
+  "url": "https://shiny.marine.ie/igfs/",
+  "tests": [{
+    "id": "0fe74838-da44-4a27-bb72-8d3e9ba6bbd2",
+    "name": "main_screen",
+    "commands": [{
+      "id": "ba52f41b-12b3-4ffc-994c-9cc33af1741d",
+      "comment": "",
+      "command": "open",
+      "target": "https://shiny.marine.ie/igfs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a1e4ec3-f3fb-42c6-b416-a4996d5553ba",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div/section", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "e65d9126-1f07-407b-a4b0-1bb25f027dcd",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box1 .inner",
+      "targets": [
+        ["css=#box1 .inner", "css:finder"],
+        ["xpath=//div[@id='box1']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "94bdedf1-25be-4726-bf42-6bcb3334c81f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box2 .inner",
+      "targets": [
+        ["css=#box2 .inner", "css:finder"],
+        ["xpath=//div[@id='box2']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "b0bbf8b4-0058-4927-9f9b-ea5e7b9579f0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box3 .inner",
+      "targets": [
+        ["css=#box3 .inner", "css:finder"],
+        ["xpath=//div[@id='box3']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "a233dc00-3ad0-4419-a96b-95ee526acda4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#box1 .inner",
+      "targets": [
+        ["css=#box1 .inner", "css:finder"],
+        ["xpath=//div[@id='box1']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd112c86-1d43-4a12-8f81-24e44041ee1a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#box2 .inner",
+      "targets": [
+        ["css=#box2 .inner", "css:finder"],
+        ["xpath=//div[@id='box2']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a398af3d-14cc-42c0-8e18-01051fa66fac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#box3 .inner",
+      "targets": [
+        ["css=#box3 .inner", "css:finder"],
+        ["xpath=//div[@id='box3']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c4e15d-e8b7-4567-be2d-5ad2d4486e40",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.bg-navy > .box-body",
+      "targets": [
+        ["css=.bg-navy > .box-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01c91ed-7fa4-4e95-aa90-baebc54ccca3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#gauge1 > svg",
+      "targets": [
+        ["css=#gauge1 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a81c9daa-b9d0-4fd5-a017-b4e0b0051d95",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#gauge2 path:nth-child(4)",
+      "targets": [
+        ["css=#gauge2 path:nth-child(4)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb0cff8a-875f-405d-9ad7-4806105eca46",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.irs:nth-child(1)",
+      "targets": [
+        ["css=.irs:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='controls']/div/div/div[2]/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f03260dd-6de5-474e-8954-60a881292f70",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.svg-container",
+      "targets": [
+        ["css=.svg-container", "css:finder"],
+        ["xpath=//div[@id='sp_piechart']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b27dea-d376-456d-a8d9-45aa70eaac81",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-sm-3:nth-child(2) .box-body",
+      "targets": [
+        ["css=.col-sm-3:nth-child(2) .box-body", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54ac3820-9b40-474e-b72b-a3992e2c2ba7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-sm-3:nth-child(3) .box-body",
+      "targets": [
+        ["css=.col-sm-3:nth-child(3) .box-body", "css:finder"],
+        ["xpath=//div[3]/div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02c792b3-d185-431c-85a8-82153b5d16cb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a3fcb760-c349-45c6-8abb-17eb9e04c63e",
+    "name": "ind_species_Haddock_mapping",
+    "commands": [{
+      "id": "28423ba7-0d8d-415a-b83c-a6e53a6a0f0e",
+      "comment": "",
+      "command": "open",
+      "target": "https://shiny.marine.ie/igfs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43e20aff-de7b-40c6-9a9e-57a4deb16a9d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div/section", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "cd8db7b8-e9d9-41bb-a650-375bc030c131",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box1 .inner",
+      "targets": [
+        ["css=#box1 .inner", "css:finder"],
+        ["xpath=//div[@id='box1']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "27c595d3-b664-4ec5-acea-3bcc08950457",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box2 .inner",
+      "targets": [
+        ["css=#box2 .inner", "css:finder"],
+        ["xpath=//div[@id='box2']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "4ef04b08-64d3-42f7-8196-09d1e1d12024",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box3 .inner",
+      "targets": [
+        ["css=#box3 .inner", "css:finder"],
+        ["xpath=//div[@id='box3']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "7bbb82d5-591c-42e7-aac5-aa6f95120301",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go",
+      "targets": [
+        ["linkText=Go", "linkText"],
+        ["css=#spSite > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go')]", "xpath:link"],
+        ["xpath=//div[@id='spSite']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shiny.marine.ie/igfshad/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5489",
+      "windowTimeout": 2000
+    }, {
+      "id": "f20a6423-9d04-4354-8076-cfb13546eeac",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5489}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5127686-7077-481e-8f99-92e456d5e7b7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "8d4e8731-9554-4ef2-a404-59192e86644f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=mymap",
+      "targets": [
+        ["id=mymap", "id"],
+        ["css=#mymap", "css:finder"],
+        ["xpath=//div[@id='mymap']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "0fa27c39-11aa-432e-ac40-952efa5fe090",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(2) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[2]/div/input", "xpath:idRelative"],
+        ["xpath=//label[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "838adb6a-f437-4f20-8aca-9ab1b3ff7595",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.leaflet-interactive:nth-child(176)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(176)", "css:finder"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "9e65572f-4b03-4287-83ca-aa0baf3e895f",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(3) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(3) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[3]/div/input", "xpath:idRelative"],
+        ["xpath=//label[3]/div/input", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "6e538bf9-ec9c-4d20-96e9-d2c398ce7339",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.leaflet-interactive:nth-child(89)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(89)", "css:finder"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "6cec01e4-ad1e-4914-b130-933bca515ce0",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(4) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(4) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[4]/div/input", "xpath:idRelative"],
+        ["xpath=//label[4]/div/input", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "d6735b2f-20af-4457-bbf4-c5d29a8532c6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.leaflet-interactive:nth-child(83)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(83)", "css:finder"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "6d94e06c-e92b-43b1-8139-14377b741261",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(5) .leaflet-control-layers-selector",
+      "targets": [
+        ["css=label:nth-child(5) .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=(//input[@name='leaflet-base-layers'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div/label[5]/div/input", "xpath:idRelative"],
+        ["xpath=//label[5]/div/input", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "14cf738d-7350-4573-85d5-6f2e877c50c3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.leaflet-interactive:nth-child(117)",
+      "targets": [
+        ["css=.leaflet-interactive:nth-child(117)", "css:finder"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "671eb556-96b3-40d1-b8b4-57279c17a116",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-control-layers-overlays .leaflet-control-layers-selector",
+      "targets": [
+        ["css=.leaflet-control-layers-overlays .leaflet-control-layers-selector", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='mymap']/div[2]/div[2]/div/form/div[3]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/div/input", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "581f1d36-d24e-4373-b2fd-b0aeadce40ad",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.irs-slider",
+      "targets": [
+        ["css=.irs-slider", "css:finder"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div/div/span/span[6]", "xpath:idRelative"],
+        ["xpath=//div/span/span[6]", "xpath:position"]
+      ],
+      "value": "287,11"
+    }, {
+      "id": "12460df5-eb06-4b3b-a00b-52aba0719e21",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.irs:nth-child(1)",
+      "targets": [
+        ["css=.irs:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "13,23"
+    }, {
+      "id": "26ab1fc6-9026-4a1d-893e-a3ee1af00e7a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.irs:nth-child(1)",
+      "targets": [
+        ["css=.irs:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "13,23"
+    }, {
+      "id": "4b5342f5-b54c-41ae-b2aa-8d02a06c6214",
+      "comment": "",
+      "command": "click",
+      "target": "css=.irs-slider",
+      "targets": [
+        ["css=.irs-slider", "css:finder"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div/div/span/span[6]", "xpath:idRelative"],
+        ["xpath=//div/span/span[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "268d9171-d7d9-4cd4-ad9b-3ee442f37090",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.leaflet-marker-icon:nth-child(147)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(147)", "css:finder"],
+        ["xpath=(//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8UlEQVQ4jYXTPWrDQBCG4UdChBxkjpOfwjHYRYrgYwVXKWxwksLJcXQS4yKFx7CyVsqAYNmd95vV7DcN9H3f4R0/EfFtJvq+f8EjNhFxbhL+wApnrCPicwbeocMer21WXmVOh10mzsGS2bb4wqnIHYlUYMkcmkx4SKG7IuGMda5r8CIifpuiypSIKRia4mBKpIwBPBL4R2QEQ1upcj+x3+bZIG5/odbtMkY+KZtYg2tNHIi0M/AJy/wmfdLMwRFxzAJPOKj4pHUZjNo7H68buV5UbvLcYuMyGCU8eKoU+b0R2ePtauUOWxxqcBnpk6Uc5z/x5XtXVVAi8wAAAABJRU5ErkJggg==')])[147]", "xpath:img"],
+        ["xpath=//div[@id='mymap']/div/div[4]/img[147]", "xpath:idRelative"],
+        ["xpath=//img[147]", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "9c238163-568d-4717-a7db-90a4a2de31e8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=mymap",
+      "targets": [
+        ["id=mymap", "id"],
+        ["css=#mymap", "css:finder"],
+        ["xpath=//div[@id='mymap']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-4815-1']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "d44bdcc5-ec13-47e8-8919-3448544d68dd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=g > .leaflet-interactive:nth-child(120)",
+      "targets": [
+        ["css=g > .leaflet-interactive:nth-child(120)", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bd10700f-6568-4ace-a857-7b364b65180b",
+    "name": "ind_species_Haddock_plots",
+    "commands": [{
+      "id": "0759bfcf-dacd-44c4-b51b-d1ded985c1cd",
+      "comment": "",
+      "command": "open",
+      "target": "https://shiny.marine.ie/igfs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de5acf42-a49e-46e1-a4b2-ad6b5966e7a9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div/section", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "96dd3f17-c1ad-46cb-a97a-85dc1afdfcd0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box1 .inner",
+      "targets": [
+        ["css=#box1 .inner", "css:finder"],
+        ["xpath=//div[@id='box1']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "bbd4ff99-791d-4ea4-8f22-eb1a59cd9a36",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box2 .inner",
+      "targets": [
+        ["css=#box2 .inner", "css:finder"],
+        ["xpath=//div[@id='box2']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "d4af4965-221a-469a-8804-a3428f939652",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box3 .inner",
+      "targets": [
+        ["css=#box3 .inner", "css:finder"],
+        ["xpath=//div[@id='box3']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "cc976297-7d1c-43fe-ab83-503fd7d4a8f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go",
+      "targets": [
+        ["linkText=Go", "linkText"],
+        ["css=#spSite > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go')]", "xpath:link"],
+        ["xpath=//div[@id='spSite']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shiny.marine.ie/igfshad/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5489",
+      "windowTimeout": 2000
+    }, {
+      "id": "22f402e8-07b6-4f9b-87e5-506eb08b569d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5489}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1144badd-ba07-4265-a493-7d05636f2ebb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plots",
+      "targets": [
+        ["linkText=Plots", "linkText"],
+        ["css=#nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Plots')]", "xpath:link"],
+        ["xpath=//ul[@id='nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-4815-2')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35f25de3-d3bd-48d9-becc-523f459c79d6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#cpueplotall .nsewdrag",
+      "targets": [
+        ["css=#cpueplotall .nsewdrag", "css:finder"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "210d09c8-82c7-4ef3-8a73-098ec8f56c85",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Abundance",
+      "targets": [
+        ["linkText=Abundance", "linkText"],
+        ["css=#tabselected > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Abundance')]", "xpath:link"],
+        ["xpath=//ul[@id='tabselected']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-9079-2')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Abundance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37df1ebf-177b-4571-8726-65a82e758225",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Length Frequency",
+      "targets": [
+        ["linkText=Length Frequency", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Length Frequency')]", "xpath:link"],
+        ["xpath=//ul[@id='tabselected']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-9079-3')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Length Frequency')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c1ae828-2a20-4f4c-9b1c-e5b36e0d1c54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Length/Weight",
+      "targets": [
+        ["linkText=Length/Weight", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Length/Weight')]", "xpath:link"],
+        ["xpath=//ul[@id='tabselected']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-9079-4')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Length/Weight')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "945c9924-cddf-4a3f-988b-0dd84ec70f17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Length/Age",
+      "targets": [
+        ["linkText=Length/Age", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Length/Age')]", "xpath:link"],
+        ["xpath=//ul[@id='tabselected']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-9079-5')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Length/Age')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0789e05-4b0e-4a89-8505-694dd24f613b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cohort Length/Age",
+      "targets": [
+        ["linkText=Cohort Length/Age", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cohort Length/Age')]", "xpath:link"],
+        ["xpath=//ul[@id='tabselected']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-9079-6')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cohort Length/Age')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ed631478-ab5f-4b1b-b48c-b8004a5f737c",
+    "name": "ind_species_Cod_mapping",
+    "commands": [{
+      "id": "6b3a9d91-a6e8-413d-88a4-1090b778530d",
+      "comment": "",
+      "command": "open",
+      "target": "https://shiny.marine.ie/igfs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b05583ec-460d-42b3-9d9e-74b366fed847",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div/section", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "a2098cf3-aa22-478f-a996-927bbcd268dd",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box1 .inner",
+      "targets": [
+        ["css=#box1 .inner", "css:finder"],
+        ["xpath=//div[@id='box1']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "b604dc87-083e-4737-b25c-baa7ac4cf7ec",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box2 .inner",
+      "targets": [
+        ["css=#box2 .inner", "css:finder"],
+        ["xpath=//div[@id='box2']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "97133803-b5c0-420a-b580-445ef1651cc6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#box3 .inner",
+      "targets": [
+        ["css=#box3 .inner", "css:finder"],
+        ["xpath=//div[@id='box3']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": "9999"
+    }, {
+      "id": "e138ded2-ef6c-4855-a590-d96a6248a3f7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//section/div/div[3]/div/div/div[2]/div/div/div/div",
+      "targets": [
+        ["css=.focus", "css:finder"],
+        ["xpath=//section/div/div[3]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6639584e-b5e7-48ae-a922-9ee03889ec26",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0fe74838-da44-4a27-bb72-8d3e9ba6bbd2"]
+  }],
+  "urls": ["https://shiny.marine.ie/igfs/"],
+  "plugins": []
+}
